@@ -67,7 +67,10 @@ end,
 
 	-- LSP
 	-- Конфигурации LSP клиента
-	use 'neovim/nvim-lspconfig'
+	use {'neovim/nvim-lspconfig',
+	config = function()
+		require('lspconfig').gopls.setup({})
+	end }
 	use 'williamboman/nvim-lsp-installer'
 
 	-- Автодополнение
