@@ -67,40 +67,44 @@ end,
 
 	-- LSP
 	-- Конфигурации LSP клиента
-	use {'neovim/nvim-lspconfig',
-	config = function()
-		require('lspconfig').gopls.setup({})
-	end }
-	use 'williamboman/nvim-lsp-installer'
+	-- use {'neovim/nvim-lspconfig',
+	-- config = function()
+		--	require('lspconfig').gopls.setup({})
+		-- end }
+		-- use 'williamboman/nvim-lsp-installer'
+		use 'neovim/nvim-lspconfig'
+		use "williamboman/mason.nvim"
+		-- иконки в выпадающем списке автодополнений (прямо как в vscode)
+		use('onsails/lspkind-nvim')
 
-	-- Автодополнение
-	use 'hrsh7th/nvim-cmp'
-	use 'hrsh7th/cmp-nvim-lsp'
-	use 'hrsh7th/cmp-buffer'
-	use 'saadparwaiz1/cmp_luasnip'
+		-- Автодополнение
+		use 'hrsh7th/nvim-cmp'
+		use 'hrsh7th/cmp-nvim-lsp'
+		use 'hrsh7th/cmp-buffer'
+		use 'saadparwaiz1/cmp_luasnip'
 
-	-- Для файлов
-	use 'hrsh7th/cmp-path'
+		-- Для файлов
+		use 'hrsh7th/cmp-path'
 
-	-- Snippets
-	use 'L3MON4D3/LuaSnip'
+		-- Snippets
+		use 'L3MON4D3/LuaSnip'
 
-	-- Treesitter
-	use 'nvim-treesitter/nvim-treesitter'
+		-- Treesitter
+		use 'nvim-treesitter/nvim-treesitter'
 
-	-- Линтер
-	use 'dense-analysis/ale'
+		-- Линтер
+		use 'dense-analysis/ale'
 
-	-- Команды работают и на русской расскладке
-	use 'powerman/vim-plugin-ruscmd'
+		-- Команды работают и на русской расскладке
+		use 'powerman/vim-plugin-ruscmd'
 
-	-- Автоформатирование
-	use 'Chiel92/vim-autoformat'
+		-- Автоформатирование
+		use 'Chiel92/vim-autoformat'
 
-	-- Переводчик
-	use 'skanehira/translate.vim'
+		-- Переводчик
+		use 'skanehira/translate.vim'
 
-	if packer_bootstrap then
-		require('packer').sync()
-	end
-end)
+		if packer_bootstrap then
+			require('packer').sync()
+		end
+	end)

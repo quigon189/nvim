@@ -15,8 +15,8 @@ map('i','<C-s>','<Esc>:Autoformat<CR>:w<CR>', default_opts)
 map('n','<C-s>',':Autoformat<CR>:w<CR>', default_opts)
 
 -- Переключение вкладок TAB Shift-TAB
- map('n','<S-Tab>',':BufferLineCyclePrev<CR>', default_opts)
- map('n','<Tab>',':BufferLineCycleNext<CR>', default_opts)
+map('n','<S-Tab>',':BufferLineCyclePrev<CR>', default_opts)
+map('n','<Tab>',':BufferLineCycleNext<CR>', default_opts)
 
 -- Листать страницы вверх / вниз Пробел / Ctrl + Пробел
 map('n','<Space>',':<PageDown> zz', default_opts)
@@ -27,3 +27,4 @@ map('v','t','<Plug>(VTranslate)', {})
 
 -- Дерево файлов
 map('n', 'F', ':NvimTreeRefresh<CR>:NvimTreeToggle<CR>', default_opts)
+
