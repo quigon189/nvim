@@ -73,5 +73,7 @@ require("lazy").setup({
 		event = 'VimEnter',
 		dependencies = { { 'nvim-tree/nvim-web-devicons' } }
 	},
-	{ 'xiyaowong/transparent.nvim' }
+	{
+		'xiyaowong/transparent.nvim',
+	}
 })

@@ -1,3 +1,8 @@
+require("transparent").setup({
+  exclude_groups = {
+		'CursorLine'
+	},
+})
 vim.g.transparent_groups = vim.list_extend(
   vim.g.transparent_groups or {},
   vim.tbl_map(function(v)
