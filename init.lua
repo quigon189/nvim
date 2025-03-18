@@ -13,6 +13,7 @@ require("plugins.bufferline")
 require("plugins.lualine")
 require("plugins.dashboard")
 require("plugins.transparent")
+require("plugins.web-devicons")
 require("plugins.other")
 
 -- Добавить
