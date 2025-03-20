@@ -97,19 +97,19 @@ require("lazy").setup({
 		ft = { "go", 'gomod' },
 		build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
 	},
-	-- {
-	-- 	"folke/tokyonight.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	opts = {},
-	-- },
-	-- {
-	-- 	"catppuccin/nvim",
-	-- 	name = "catpuccin",
-	-- 	priority = 1000
-	-- },
-	-- {
-	-- 	"rose-pine/neovim",
-	-- 	name = "rose-pine"
-	-- }
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
+	{
+		"catppuccin/nvim",
+		name = "catpuccin",
+		priority = 1000
+	},
+	{
+		"rose-pine/neovim",
+		name = "rose-pine"
+	}
 })
