@@ -47,6 +47,13 @@ require("lazy").setup({
 	{ 'hrsh7th/nvim-cmp' },
 	{ 'onsails/lspkind-nvim' },
 	{
+		"L3MON4D3/LuaSnip",
+		dependencies = { "rafamadriz/friendly-snippets" },
+		version = "v2.*",
+		build = "make install_jsregexp"
+	},
+	{ 'saadparwaiz1/cmp_luasnip' },
+	{
 		"williamboman/mason.nvim",
 		build = ":MasonUpdate"
 	},
@@ -90,7 +97,19 @@ require("lazy").setup({
 		ft = { "go", 'gomod' },
 		build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
 	},
-	{
-		"folke/tokyonight.nvim",
-	}
+	-- {
+	-- 	"folke/tokyonight.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	opts = {},
+	-- },
+	-- {
+	-- 	"catppuccin/nvim",
+	-- 	name = "catpuccin",
+	-- 	priority = 1000
+	-- },
+	-- {
+	-- 	"rose-pine/neovim",
+	-- 	name = "rose-pine"
+	-- }
 })
