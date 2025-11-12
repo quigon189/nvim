@@ -12,7 +12,6 @@ opt.mouse = "a"
 opt.mousefocus = true
 
 opt.encoding = 'utf-8'
-opt.foldcolumn = '2'
 opt.cursorline = true
 opt.fillchars='eob: '
 
