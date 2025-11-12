@@ -80,9 +80,9 @@ require("lazy").setup({
 		event = 'VimEnter',
 		dependencies = { { 'nvim-tree/nvim-web-devicons' } }
 	},
-	{
-		'xiyaowong/transparent.nvim',
-	},
+	-- {
+	-- 	'xiyaowong/transparent.nvim',
+	-- },
 	{
 		"ray-x/go.nvim",
 		dependencies = { -- optional packages
@@ -111,5 +111,10 @@ require("lazy").setup({
 	{
 		"rose-pine/neovim",
 		name = "rose-pine"
+	},
+	{
+		'dasupradyumna/midnight.nvim',
+		lazy = false,
+		priority = 1000
 	}
 })

@@ -2,7 +2,7 @@ local opt = vim.opt
 local cmd = vim.cmd
 local exec = vim.api.nvim_exec
 
-cmd("colorscheme catppuccin")
+cmd.colorscheme 'midnight'
 
 opt.number = true
 -- opt.relativenumber = true
