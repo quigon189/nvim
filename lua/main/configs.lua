@@ -32,3 +32,24 @@ autocmd!
 autocmd TextYankPost * silent! lua vim.higlight.on_yank{higroup="IncSearch", timeout=500}
 augroup end
 ]], false)
+
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "go",
+--   callback = function()
+--     vim.treesitter.start()
+--   end,
+-- })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "templ",
+  callback = function()
+    vim.treesitter.start()
+  end,
+})
+
+
+vim.filetype.add({
+  extension = {
+    templ = "templ",
+  }
+})
