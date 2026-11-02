@@ -13,7 +13,7 @@ opt.mousefocus = true
 
 opt.encoding = 'utf-8'
 opt.cursorline = true
-opt.fillchars='eob: '
+opt.fillchars = 'eob: '
 
 opt.tabstop = 4
 opt.shiftwidth = 4
@@ -33,23 +33,17 @@ autocmd TextYankPost * silent! lua vim.higlight.on_yank{higroup="IncSearch", tim
 augroup end
 ]], false)
 
--- vim.api.nvim_create_autocmd("FileType", {
---   pattern = "go",
---   callback = function()
---     vim.treesitter.start()
---   end,
--- })
-
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "templ",
-  callback = function()
-    vim.treesitter.start()
-  end,
+	pattern = { "go", "templ", "sql" },
+	callback = function()
+		vim.treesitter.start()
+	end,
 })
-
 
 vim.filetype.add({
-  extension = {
-    templ = "templ",
-  }
+	extension = {
+		templ = "templ",
+	}
 })
+
+vim.highlight.priorities.semantic_tokens = 95

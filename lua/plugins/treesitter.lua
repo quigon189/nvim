@@ -5,7 +5,7 @@ return {
 		require("nvim-treesitter.configs").setup({
 			ensure_installed = {
 				"lua", "go", "python", "sql", "bash", "vim", "vimdoc", "query", "markdown",
-				"markdown_inline", "html", "css", "javascript", "templ"
+				"markdown_inline", "html", "css", "javascript", "templ", "regex"
 			},               -- Добавьте нужные вам языки
 			highlight = {
 				enable = true, -- Включает Treesitter подсветку
